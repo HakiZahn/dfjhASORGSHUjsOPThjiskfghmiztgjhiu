@@ -1,0 +1,4099 @@
+{
+  "nodes": [
+    {
+      "type": "command",
+      "name": "clr",
+      "guid": "c47af3e8-7918-43d3-8ddf-4430d57959da",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ea976cf5-0d65-460a-9b17-0c31b333bdd2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 87,
+      "y": 332,
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "Clear",
+      "guid": "b6ee5621-f5a9-4968-8a7f-97664375ddb1",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ea976cf5-0d65-460a-9b17-0c31b333bdd2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 87,
+      "y": 137,
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "Clr",
+      "guid": "2f2d6240-8292-455d-8cb0-1f149353dad6",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ea976cf5-0d65-460a-9b17-0c31b333bdd2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 83,
+      "y": 264,
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "clear",
+      "guid": "78bc4b07-ea5d-4ae9-9a4a-2a23c42010d7",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "ea976cf5-0d65-460a-9b17-0c31b333bdd2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 81,
+      "y": 180,
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "clear2",
+      "guid": "ea976cf5-0d65-460a-9b17-0c31b333bdd2",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "24173b47-3ab7-49c1-9acb-ef2af567abeb"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b6ee5621-f5a9-4968-8a7f-97664375ddb1"
+        },
+        {
+          "label": "trigger",
+          "id": "78bc4b07-ea5d-4ae9-9a4a-2a23c42010d7"
+        },
+        {
+          "label": "trigger",
+          "id": "2f2d6240-8292-455d-8cb0-1f149353dad6"
+        },
+        {
+          "label": "trigger",
+          "id": "c47af3e8-7918-43d3-8ddf-4430d57959da"
+        },
+        {
+          "label": "trigger",
+          "id": []
+        }
+      ],
+      "x": 294,
+      "y": 120,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "gc",
+      "guid": "24173b47-3ab7-49c1-9acb-ef2af567abeb",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "clearto",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "6684a527-801c-4428-8e3c-0dcfce7ee5e7"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ea976cf5-0d65-460a-9b17-0c31b333bdd2"
+        }
+      ],
+      "x": 459,
+      "y": 159,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "clearto",
+        "Number",
+        "temp",
+        "1"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dfga",
+      "guid": "6684a527-801c-4428-8e3c-0dcfce7ee5e7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "09c54a70-15f9-488b-a8be-076edecb1cb6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "24173b47-3ab7-49c1-9acb-ef2af567abeb"
+        }
+      ],
+      "x": 640,
+      "y": 142,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete All Messages",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "${tempVars.clearto}"
+      ],
+      "formnames": [
+        "channelname",
+        "msgcount"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog",
+      "guid": "09c54a70-15f9-488b-a8be-076edecb1cb6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "77f3a29b-2167-4e4c-9f44-c1d9f9222391"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6684a527-801c-4428-8e3c-0dcfce7ee5e7"
+        }
+      ],
+      "x": 819,
+      "y": 139,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "B7FF00",
+        "Clear",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор:<@${dbsVars.CommandAuthor.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nУдалено слов:**${tempVars.clearto}**",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "mute",
+      "guid": "1259888c-797d-4274-9500-26b9aeed7797",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9b34360a-c037-4dea-9ede-f7ac49c43945"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": -23,
+      "y": 422,
+      "perms": [
+        "mod_l1",
+        "mod_l2",
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "timeout",
+      "guid": "47585293-7bc8-4970-8d92-fd1c673d0a45",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5a946f9f-422c-4e28-a929-ff1878f30fbd"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4cc989a1-f7a2-42c7-9e71-ac4d824ac63d"
+        }
+      ],
+      "x": 685,
+      "y": 381,
+      "rtype": "User Action",
+      "rsubtype": "Timeout",
+      "formdata": [
+        "${tempVars.UserToMute.id}",
+        "${tempVars.TimeoutTime}",
+        "${tempVars.TimeoutReason}"
+      ],
+      "formnames": [
+        "user",
+        "time",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "TimeToTimeOutBlyat",
+      "guid": "8e9c0f1b-fa45-4601-8f36-6bc613346b5d",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "TimeoutTime",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "4cc989a1-f7a2-42c7-9e71-ac4d824ac63d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3881fa3f-5ff2-495e-a585-0e115afca2d4"
+        }
+      ],
+      "x": 330,
+      "y": 403,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "TimeoutTime",
+        "Text",
+        "temp",
+        "2"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ReasonToTimeOutBlyat",
+      "guid": "4cc989a1-f7a2-42c7-9e71-ac4d824ac63d",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "TimeoutReason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "47585293-7bc8-4970-8d92-fd1c673d0a45"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8e9c0f1b-fa45-4601-8f36-6bc613346b5d"
+        }
+      ],
+      "x": 453,
+      "y": 384,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "TimeoutReason",
+        "Text",
+        "temp",
+        "3+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1",
+      "guid": "5a946f9f-422c-4e28-a929-ff1878f30fbd",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8140baa4-6215-4681-9b95-dacdabfbac7b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "47585293-7bc8-4970-8d92-fd1c673d0a45"
+        }
+      ],
+      "x": 881,
+      "y": 380,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "B7FF00",
+        "Mute",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор: <@${dbsVars.CommandAuthor.id}>\nЗамучен: <@${tempVars.UserToMute.id}>\nВремя мута: **${tempVars.TimeoutTime}**\nПричина: \n``${tempVars.TimeoutReason}``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "sfa",
+      "guid": "3881fa3f-5ff2-495e-a585-0e115afca2d4",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8e9c0f1b-fa45-4601-8f36-6bc613346b5d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9b34360a-c037-4dea-9ede-f7ac49c43945"
+        }
+      ],
+      "x": 194,
+      "y": 416,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "UserToMute",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Mute",
+      "guid": "784ed832-946f-4d56-985b-f8f0c6e1f816",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9b34360a-c037-4dea-9ede-f7ac49c43945"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": -16,
+      "y": 499,
+      "perms": [
+        "mod_l1",
+        "mod_l2",
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "ban",
+      "guid": "c4b56406-6026-434e-ad2d-e0ad99343860",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "d66574f9-0aae-4d93-bb99-d3bc9d2bc794"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": -5,
+      "y": 611,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "Ban",
+      "guid": "11eb4880-4c87-4ba2-a77f-646307e56885",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "d66574f9-0aae-4d93-bb99-d3bc9d2bc794"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": -1,
+      "y": 686,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "BANs",
+      "guid": "81d6a6f8-e6d7-4a65-ac71-fad3e54303e6",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "fb2db45a-00b9-4b26-81d7-c991219cd4a7"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c4ec90f8-3106-4146-8a76-66c8494a7b9b"
+        }
+      ],
+      "x": 837,
+      "y": 550,
+      "rtype": "User Action",
+      "rsubtype": "Ban User",
+      "formdata": [
+        "${tempVars.UserBan.id}",
+        "${tempVars.ReasonBan}",
+        "999"
+      ],
+      "formnames": [
+        "user",
+        "reason",
+        "days"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1",
+      "guid": "fb2db45a-00b9-4b26-81d7-c991219cd4a7",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7e4450fa-0361-4db9-b8ce-a9db52dd544f"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "81d6a6f8-e6d7-4a65-ac71-fad3e54303e6"
+        }
+      ],
+      "x": 1041,
+      "y": 544,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "B7FF00",
+        "Ban",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор:<@${dbsVars.CommandAuthor.id}>\nЗабанил: <@${tempVars.UserBan.id}>\nПричина:\n``${tempVars.ReasonBan}``\n",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "adga",
+      "guid": "9b34360a-c037-4dea-9ede-f7ac49c43945",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "3881fa3f-5ff2-495e-a585-0e115afca2d4"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1259888c-797d-4274-9500-26b9aeed7797"
+        },
+        {
+          "label": "trigger",
+          "id": "784ed832-946f-4d56-985b-f8f0c6e1f816"
+        }
+      ],
+      "x": 4,
+      "y": 388,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "hk",
+      "guid": "d66574f9-0aae-4d93-bb99-d3bc9d2bc794",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "cb43f9ae-316d-400a-beaa-67aa35547191"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c4b56406-6026-434e-ad2d-e0ad99343860"
+        },
+        {
+          "label": "trigger",
+          "id": "11eb4880-4c87-4ba2-a77f-646307e56885"
+        }
+      ],
+      "x": 183,
+      "y": 549,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "df",
+      "guid": "cb43f9ae-316d-400a-beaa-67aa35547191",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c4ec90f8-3106-4146-8a76-66c8494a7b9b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "d66574f9-0aae-4d93-bb99-d3bc9d2bc794"
+        }
+      ],
+      "x": 360,
+      "y": 568,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "UserBan",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "adgadg",
+      "guid": "c4ec90f8-3106-4146-8a76-66c8494a7b9b",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ReasonBan",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "81d6a6f8-e6d7-4a65-ac71-fad3e54303e6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "cb43f9ae-316d-400a-beaa-67aa35547191"
+        }
+      ],
+      "x": 628,
+      "y": 549,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "ReasonBan",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Blacklist",
+      "guid": "0a609013-b3d5-4f20-9152-3808699a2fcc",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4e6a6139-c144-44ac-9a6b-cf92a44e79c3"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 127,
+      "y": 818
+    },
+    {
+      "type": "command",
+      "name": "blacklist",
+      "guid": "9e21b368-5e15-4396-bf63-ce2d30b8477b",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4e6a6139-c144-44ac-9a6b-cf92a44e79c3"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 132,
+      "y": 887
+    },
+    {
+      "type": "command",
+      "name": "bl",
+      "guid": "1b3e5165-297e-4ead-a7fe-703c3a8069ca",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4e6a6139-c144-44ac-9a6b-cf92a44e79c3"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 131,
+      "y": 961
+    },
+    {
+      "type": "command",
+      "name": "Bl",
+      "guid": "8daa2347-aa56-46b5-9e26-49e8fc619319",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "4e6a6139-c144-44ac-9a6b-cf92a44e79c3"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 133,
+      "y": 1040
+    },
+    {
+      "type": "response",
+      "name": "daf",
+      "guid": "4e6a6139-c144-44ac-9a6b-cf92a44e79c3",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "57c4900b-6967-4f28-9976-c148b33016f1"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0a609013-b3d5-4f20-9152-3808699a2fcc"
+        },
+        {
+          "label": "trigger",
+          "id": "9e21b368-5e15-4396-bf63-ce2d30b8477b"
+        },
+        {
+          "label": "trigger",
+          "id": "1b3e5165-297e-4ead-a7fe-703c3a8069ca"
+        },
+        {
+          "label": "trigger",
+          "id": "8daa2347-aa56-46b5-9e26-49e8fc619319"
+        }
+      ],
+      "x": 337,
+      "y": 809,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "fsdafs",
+      "guid": "29ae8e08-9fdd-44d4-a97f-a43853750d6b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f090f7a3-20a4-4a85-ac53-73243d7d6cf9"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "b2f688a9-194d-42ed-ad02-f26ad4a7b885"
+        }
+      ],
+      "x": 873,
+      "y": 844,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.BlUser.id}",
+        "🐒Черный список"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "adf",
+      "guid": "b2f688a9-194d-42ed-ad02-f26ad4a7b885",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "Reason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "29ae8e08-9fdd-44d4-a97f-a43853750d6b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "57c4900b-6967-4f28-9976-c148b33016f1"
+        }
+      ],
+      "x": 680,
+      "y": 820,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "Reason",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_1",
+      "guid": "f090f7a3-20a4-4a85-ac53-73243d7d6cf9",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "9d342b79-285b-43d0-a553-f2c653962289"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "29ae8e08-9fdd-44d4-a97f-a43853750d6b"
+        }
+      ],
+      "x": 1082,
+      "y": 804,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "B7FF00",
+        "🐒Черный список",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор:<@${dbsVars.CommandAuthor.id}>\nВыдан: <@${tempVars.BlUser.id}>\nПричина:\n``${tempVars.Reason}``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "sgsdg",
+      "guid": "57c4900b-6967-4f28-9976-c148b33016f1",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "b2f688a9-194d-42ed-ad02-f26ad4a7b885"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4e6a6139-c144-44ac-9a6b-cf92a44e79c3"
+        }
+      ],
+      "x": 499,
+      "y": 824,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "BlUser",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "info4ardlgjnauodhgouarhegyiwasrhnuyhlg",
+      "guid": "3c4419f9-fb28-42c5-bacb-053ede286037",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e728e818-434e-4642-88a4-a22e0f9c9847"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 30,
+      "y": 2556,
+      "perms": []
+    },
+    {
+      "type": "response",
+      "name": "dfa",
+      "guid": "684fdd73-8f9e-4fda-808d-96b54ae38b4d",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "66d5de86-8109-4050-8ed5-22da841de963"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e728e818-434e-4642-88a4-a22e0f9c9847"
+        }
+      ],
+      "x": 438,
+      "y": 2585,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "AD7C00",
+        "➡️ ДОПОЛНИТЕЛЬНО",
+        "",
+        "Правила Kaminari no Iklari",
+        "",
+        "",
+        "✅1. вызов модерации\n▫️«.911 @нарушитель, пункт правил» (e.x **.911 @HakiZahn#1234 1.2**)\n-указывая всё в правильной последовательности шансы эффективно выполненной работы администрацией значительно повышаются! также важно - неправильно оформленная жалоба может быть проигнорирована.\n✅ 2. степень нарушений:\n▫️-администрация уполномочена сама оценивать степень нарушений правил сервера, т.е. определить какое кол-во символов в чате является флудом а какое нет и т.п.\n\n✅ 3. о блокировках:\n▫️-администрация не обязана всегда выдавать \"предупреждение\" в случае если участник совершил своё первое нарушение. Первая блокировка участника может стать и его последней.\n\n✅4. охват правил:\n▫️-правила сервера предназначены для этого самого сервера, а потому их распространение на лс, сторонние сервера или же на приватные беседы не рассматривается и не является нарушением (допустимы исключения).\n\n✅5. нововведения:\n▫️-пункты правил, дополнительная информация и т.п. время от времени могут дорабатываться либо же редактироваться.\nПомните - незнание правил не освобождает вас от ответственности!\n\n✅ 6. исключения из правил:\n▫️-некоторые из пунктов правил могут не распространяться на администрацию если это в интересах сервера и только.\n\n✅6. участники - администрация:\n▫️-ознакамливаясь с правилами сервера следует учесть что под участниками воспринимается также и модерация/администрация сервера.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Tropne",
+      "guid": "be85632b-ba06-4a71-b8a0-241c57ec1f86",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "2d83c80c-275a-462d-b330-38df5db4da6d"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 103,
+      "y": 1244,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tropne",
+      "guid": "0ec47d92-d78f-4402-afd6-dda5abec07ec",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "2d83c80c-275a-462d-b330-38df5db4da6d"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 105,
+      "y": 1335,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "tro",
+      "guid": "2f37ca2e-886d-4342-9b2c-431a41310610",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "2d83c80c-275a-462d-b330-38df5db4da6d"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 96,
+      "y": 1423,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "Tro",
+      "guid": "3f106fcb-17ff-491d-a1a6-4741d08213ba",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "2d83c80c-275a-462d-b330-38df5db4da6d"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 98,
+      "y": 1500,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "dgfadg",
+      "guid": "2d83c80c-275a-462d-b330-38df5db4da6d",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "80377ee0-b44e-4f90-9100-9fa9d3b107c9"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "be85632b-ba06-4a71-b8a0-241c57ec1f86"
+        },
+        {
+          "label": "trigger",
+          "id": "0ec47d92-d78f-4402-afd6-dda5abec07ec"
+        },
+        {
+          "label": "trigger",
+          "id": "2f37ca2e-886d-4342-9b2c-431a41310610"
+        },
+        {
+          "label": "trigger",
+          "id": "3f106fcb-17ff-491d-a1a6-4741d08213ba"
+        }
+      ],
+      "x": 337,
+      "y": 1253,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "dfadafa",
+      "guid": "80377ee0-b44e-4f90-9100-9fa9d3b107c9",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "bbf9cdc0-2904-41ad-beda-13a27b133ad9"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2d83c80c-275a-462d-b330-38df5db4da6d"
+        }
+      ],
+      "x": 561,
+      "y": 1259,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "1102178862655361025",
+        "1101568345830068345",
+        [
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY",
+          "USE_EXTERNAL_EMOJIS"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dfadafa_1",
+      "guid": "da8a4893-f9bb-4fe2-ab42-cd5f47384ad8",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "586fd1ca-66df-49e0-8727-56804efd44a2"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fa99ae0c-99b6-4535-85e3-530b3b20f320"
+        }
+      ],
+      "x": 736,
+      "y": 1731,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "1102178862655361025",
+        "1101568345830068345",
+        [
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY",
+          "USE_EXTERNAL_EMOJIS"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dfadafa_2",
+      "guid": "bbf9cdc0-2904-41ad-beda-13a27b133ad9",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7e960cba-f77a-4584-9352-e52bc7901057"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "80377ee0-b44e-4f90-9100-9fa9d3b107c9"
+        }
+      ],
+      "x": 752,
+      "y": 1246,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "1102163925467930716",
+        "1101568345830068345",
+        [
+          "VIEW_CHANNEL",
+          "READ_MESSAGE_HISTORY",
+          "CONNECT",
+          "SPEAK"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "trc",
+      "guid": "a2836c8c-9459-46cd-8543-498a703c24d8",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9c7dc3f5-8149-4cc3-9f10-bb9991ac0df2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 116,
+      "y": 1717,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "dfadafa_2_1",
+      "guid": "586fd1ca-66df-49e0-8727-56804efd44a2",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "4716df54-70a8-4f07-bbb2-284448e49dc5"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "da8a4893-f9bb-4fe2-ab42-cd5f47384ad8"
+        }
+      ],
+      "x": 918,
+      "y": 1713,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "1102163925467930716",
+        "1101568345830068345",
+        [
+          "READ_MESSAGE_HISTORY",
+          "CONNECT",
+          "SPEAK"
+        ],
+        "Deny"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Trc",
+      "guid": "ae76947e-7933-443a-8489-33e6ca999420",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9c7dc3f5-8149-4cc3-9f10-bb9991ac0df2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 126,
+      "y": 1807,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "Trclose",
+      "guid": "ec4b9ece-6e3c-40eb-997f-5d9c36f46320",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9c7dc3f5-8149-4cc3-9f10-bb9991ac0df2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 120,
+      "y": 1890,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "trclose",
+      "guid": "7338f94d-0cbb-496d-9988-1412fae6aba0",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "9c7dc3f5-8149-4cc3-9f10-bb9991ac0df2"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 115,
+      "y": 1980,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "fdg",
+      "guid": "9c7dc3f5-8149-4cc3-9f10-bb9991ac0df2",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "fa99ae0c-99b6-4535-85e3-530b3b20f320"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a2836c8c-9459-46cd-8543-498a703c24d8"
+        },
+        {
+          "label": "trigger",
+          "id": "ae76947e-7933-443a-8489-33e6ca999420"
+        },
+        {
+          "label": "trigger",
+          "id": "ec4b9ece-6e3c-40eb-997f-5d9c36f46320"
+        },
+        {
+          "label": "trigger",
+          "id": "7338f94d-0cbb-496d-9988-1412fae6aba0"
+        }
+      ],
+      "x": 339,
+      "y": 1744,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_1_1",
+      "guid": "7e960cba-f77a-4584-9352-e52bc7901057",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f17f56cb-d069-436c-bac0-9ccace169d82"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "bbf9cdc0-2904-41ad-beda-13a27b133ad9"
+        }
+      ],
+      "x": 961,
+      "y": 1226,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "0DFF00",
+        "Тренировки",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Начал тренировку.``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_1_1_1",
+      "guid": "4716df54-70a8-4f07-bbb2-284448e49dc5",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "d116077b-ceda-450a-9a8b-6d55324329ee"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "586fd1ca-66df-49e0-8727-56804efd44a2"
+        }
+      ],
+      "x": 1191,
+      "y": 1700,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "FF0000",
+        "Тренировки",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Завершил тренировку.``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "warn",
+      "guid": "6432d90d-797d-42de-98f4-9c4c484b5b49",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "f5eb7965-a91e-41d2-a608-72e98fe264f7"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 124,
+      "y": 2192,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "Warn",
+      "guid": "75d94da3-258a-4054-b641-9763bc963edd",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "f5eb7965-a91e-41d2-a608-72e98fe264f7"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 132,
+      "y": 2293,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "dgad",
+      "guid": "f5eb7965-a91e-41d2-a608-72e98fe264f7",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "a0dd0b99-d49d-4db9-a07c-8f5efde7716c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6432d90d-797d-42de-98f4-9c4c484b5b49"
+        },
+        {
+          "label": "trigger",
+          "id": "75d94da3-258a-4054-b641-9763bc963edd"
+        },
+        {
+          "label": "trigger",
+          "id": []
+        }
+      ],
+      "x": 332,
+      "y": 2139,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "DGAGD",
+      "guid": "a00ef078-bd63-45c1-8129-a152fb9dbaa6",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f3f1c05c-2675-47f4-aefb-803da0bed207"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c59a41d5-8fac-4876-b7e5-3ea0fc0753f5"
+        }
+      ],
+      "x": 852,
+      "y": 2106,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1102047698166747136",
+        "FF7300",
+        "Warn",
+        "",
+        "",
+        "",
+        "",
+        "Администратор <@${tempVars.WarnMod.id}> получил выговор \nПричина:\n``${tempVars.reason}``",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_1_1_1_1",
+      "guid": "f3f1c05c-2675-47f4-aefb-803da0bed207",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c7b34822-6dcc-4908-bebb-8fa408c4eadc"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a00ef078-bd63-45c1-8129-a152fb9dbaa6"
+        }
+      ],
+      "x": 1060,
+      "y": 2108,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "FF0000",
+        "Warn",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор: <@${dbsVars.CommandAuthor.id}>\nВыдано:<@${tempVars.WarnMod.id}>\nПричина:\n``${tempVars.reason}``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "fdfafdaf",
+      "guid": "a0dd0b99-d49d-4db9-a07c-8f5efde7716c",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "reason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c59a41d5-8fac-4876-b7e5-3ea0fc0753f5"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f5eb7965-a91e-41d2-a608-72e98fe264f7"
+        }
+      ],
+      "x": 531,
+      "y": 2120,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "reason",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dahahgdaadgh",
+      "guid": "c59a41d5-8fac-4876-b7e5-3ea0fc0753f5",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "a00ef078-bd63-45c1-8129-a152fb9dbaa6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "a0dd0b99-d49d-4db9-a07c-8f5efde7716c"
+        }
+      ],
+      "x": 671,
+      "y": 2004,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "WarnMod",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "911",
+      "guid": "92993275-5a8a-45d2-b8b5-4cd2b7dd30d6",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "02892909-3439-446c-a295-117037e2d04f"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 56,
+      "y": 2399
+    },
+    {
+      "type": "response",
+      "name": "dfadfa",
+      "guid": "4713c450-1189-44a3-a02b-4a209bd1d477",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c96f8510-4acd-4728-a5d5-e0bf2da5e74c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6d13e525-b745-498e-991f-9c64f3a7f9e8"
+        }
+      ],
+      "x": 617,
+      "y": 2348,
+      "rtype": "Message",
+      "rsubtype": "Reply Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "Администрация вызвана. ",
+        "true"
+      ],
+      "formnames": [
+        "msgid",
+        "replytext",
+        "mentionuser"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_1_1_1_1_1",
+      "guid": "c96f8510-4acd-4728-a5d5-e0bf2da5e74c",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "029b4f28-2f77-47d6-9fe3-00a59f82d373"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4713c450-1189-44a3-a02b-4a209bd1d477"
+        }
+      ],
+      "x": 832,
+      "y": 2349,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101991716967419984",
+        "1500FF",
+        "911",
+        "",
+        "Kaminari no Ikari ",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Вызвал <@${dbsVars.CommandAuthor.id}> \nВызвали на: <@${tempVars.911User.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nПричина: \n``${tempVars.Reason}``\n<@&1102014618437685278>",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dagadg",
+      "guid": "6d13e525-b745-498e-991f-9c64f3a7f9e8",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "Reason",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "4713c450-1189-44a3-a02b-4a209bd1d477"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "02892909-3439-446c-a295-117037e2d04f"
+        }
+      ],
+      "x": 406,
+      "y": 2369,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "Reason",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "stfkdghlkd",
+      "guid": "02892909-3439-446c-a295-117037e2d04f",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "6d13e525-b745-498e-991f-9c64f3a7f9e8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "92993275-5a8a-45d2-b8b5-4cd2b7dd30d6"
+        }
+      ],
+      "x": 230,
+      "y": 2374,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "911User",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dfa_1",
+      "guid": "66d5de86-8109-4050-8ed5-22da841de963",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "684fdd73-8f9e-4fda-808d-96b54ae38b4d"
+        }
+      ],
+      "x": 741,
+      "y": 2579,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "19D600",
+        "➡️ РОЛИ:",
+        "",
+        "Правила Kaminari no Iklari",
+        "",
+        "",
+        "Глава\n▫️- Глава клана\nЗам главы\n▫️- Заместитель главы, выступает тренером при необходимости, решает вопросы.\n3.Куратор\n▫️-Отвечает за набор участников в клан\n4.Helper\n▫️-Помогает игрокам сервера, следит за соблюдениями правил\n5.Элита\n▫️-Доступ к закрытым чатам, выделения меж другими участниками, поддержка и реклама нашего клана\n6.Натренерованный\n▫️Выделение меж другими участниками. Выдаётся за присутствие на тренировках\nЧерный список\n▫️- Роль «Чёрного Списка» для особо провинившихся участников сервера. Обладатель данной роли рискует получить бан при первом же нарушении\n(чаще даётся за намеренное нарушение).\n8.Гость\n▫️-Не является членом клана.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Ticket",
+      "guid": "8c9efbd5-70d1-43f7-a752-deef2c087284",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "5fee6373-2914-464f-bd4b-3551d87181dd"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1145,
+      "y": 202
+    },
+    {
+      "type": "command",
+      "name": "ticket",
+      "guid": "edc9754f-b709-4ba9-89c7-03780bd9e7b5",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "5fee6373-2914-464f-bd4b-3551d87181dd"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1132,
+      "y": 91
+    },
+    {
+      "type": "response",
+      "name": "khg;;hg;kh",
+      "guid": "5fee6373-2914-464f-bd4b-3551d87181dd",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "2917c72f-443e-4474-98c8-b015a55db187"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "edc9754f-b709-4ba9-89c7-03780bd9e7b5"
+        },
+        {
+          "label": "trigger",
+          "id": "8c9efbd5-70d1-43f7-a752-deef2c087284"
+        }
+      ],
+      "x": 1335,
+      "y": 81,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "hfah",
+      "guid": "2917c72f-443e-4474-98c8-b015a55db187",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c646642a-808d-463e-81ac-ef17ec747c8c"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5fee6373-2914-464f-bd4b-3551d87181dd"
+        }
+      ],
+      "x": 1528,
+      "y": 133,
+      "rtype": "Variable",
+      "rsubtype": "Generate Random Number",
+      "formdata": [
+        "ticketN",
+        "100000",
+        "10000000000",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "min",
+        "max",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "sfhashf",
+      "guid": "c646642a-808d-463e-81ac-ef17ec747c8c",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "TicketChannel",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "8470eaa7-71ea-407e-ad47-ca2adaf2085e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2917c72f-443e-4474-98c8-b015a55db187"
+        }
+      ],
+      "x": 1713,
+      "y": 129,
+      "rtype": "Channel Action",
+      "rsubtype": "Create Channel",
+      "formdata": [
+        "Ticket-${tempVars.ticketN}",
+        "1102035329344606328",
+        "",
+        "Text",
+        "TicketChannel",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "chancategory",
+        "reason",
+        "channeltype",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "gjd",
+      "guid": "8470eaa7-71ea-407e-ad47-ca2adaf2085e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "f89afd5c-8912-48d0-bed2-b2159421f4cf"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c646642a-808d-463e-81ac-ef17ec747c8c"
+        }
+      ],
+      "x": 1910,
+      "y": 134,
+      "rtype": "Channel Action",
+      "rsubtype": "Update Channel Permissions",
+      "formdata": [
+        "${tempVars.TicketChannel.id}",
+        "${dbsVars.CommandAuthor.id}",
+        [
+          "VIEW_CHANNEL",
+          "SEND_MESSAGES",
+          "SEND_TTS_MESSAGES",
+          "EMBED_LINKS",
+          "ATTACH_FILES",
+          "READ_MESSAGE_HISTORY",
+          "CONNECT",
+          "SPEAK"
+        ],
+        "Allow"
+      ],
+      "formnames": [
+        "channelName",
+        "permid",
+        "permissions",
+        "allow"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "jkl;jh;hj;k",
+      "guid": "f89afd5c-8912-48d0-bed2-b2159421f4cf",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "Kek",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "826e8e92-6693-4afb-8363-5e127d06b00e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8470eaa7-71ea-407e-ad47-ca2adaf2085e"
+        }
+      ],
+      "x": 2098,
+      "y": 123,
+      "rtype": "Message",
+      "rsubtype": "Send Message",
+      "formdata": [
+        "${tempVars.TicketChannel.id}",
+        "Тикет создан.\nОжидайте ответа от администрации. Просьба не флудить пингами администрации. Мы стараемся отвечать на тикеты быстро, насколько это возможно.\n``Если вы хотите получить форму для вступления в клан, используйте команду .Application.``",
+        "Kek",
+        "temp"
+      ],
+      "formnames": [
+        "channelName",
+        "messageText",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Application",
+      "guid": "933fa299-bc4b-4670-a06f-b15fd6d4dcd7",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e13edcd6-efdb-45b6-a68f-5d3c4fbeea81"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1565,
+      "y": 464,
+      "perms": []
+    },
+    {
+      "type": "command",
+      "name": "application",
+      "guid": "306a3008-8d6c-41bf-a722-fe4ee910604f",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "e13edcd6-efdb-45b6-a68f-5d3c4fbeea81"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1559,
+      "y": 392
+    },
+    {
+      "type": "response",
+      "name": "sdgsgdsd",
+      "guid": "e13edcd6-efdb-45b6-a68f-5d3c4fbeea81",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "fe895574-7723-43ad-82cc-a7c46bacc515"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "306a3008-8d6c-41bf-a722-fe4ee910604f"
+        },
+        {
+          "label": "trigger",
+          "id": "933fa299-bc4b-4670-a06f-b15fd6d4dcd7"
+        }
+      ],
+      "x": 1809,
+      "y": 338,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "пвф",
+      "guid": "fe895574-7723-43ad-82cc-a7c46bacc515",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e13edcd6-efdb-45b6-a68f-5d3c4fbeea81"
+        }
+      ],
+      "x": 1992,
+      "y": 362,
+      "rtype": "Message",
+      "rsubtype": "Reply Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "Форма для вступления в клан:\n```1)Имя, возраст \n2)Имя пользователя в Discord \n3)Город проживания и часовой пояс \n4)Игровой ник \n5)Как давно ты играешь в ZO  Насколько хорошо разбираешься в игре и в каких ее аспектах? Какие у тебя игровые достижения? \n6)Какое время ты готов отводить на работу с нашим Discord-сервером по ZO (укажи свободные для этого дни недели и время, когда можешь проявлять активность)? \n7)Что ты можешь предложить, чтобы улучшить наш Discord-сервер? \n8)Если ты что-то еще хочешь нам рассказать, то можешь это сделать здесь ```",
+        "true"
+      ],
+      "formnames": [
+        "msgid",
+        "replytext",
+        "mentionuser"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": "Refuse",
+      "guid": "bd21d2f4-93f3-4186-bd73-b8410d37434a",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "983553ec-ef2b-49cd-94e1-d0fde9412081"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1523,
+      "y": 639,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "refuse",
+      "guid": "02a946ce-b0c5-49b9-80b3-4512a8aa9d94",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "983553ec-ef2b-49cd-94e1-d0fde9412081"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1529,
+      "y": 735,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "command",
+      "name": "accept",
+      "guid": "30ddc6a7-34de-4482-aa0e-fe3c327dd190",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "6c1962d8-cbd7-4b78-a5a3-e09911a98a75"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1552,
+      "y": 900
+    },
+    {
+      "type": "command",
+      "name": "Accept",
+      "guid": "ea674467-bbf3-4d63-a2ca-1d385f6ff51e",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "6c1962d8-cbd7-4b78-a5a3-e09911a98a75"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1549,
+      "y": 992
+    },
+    {
+      "type": "response",
+      "name": "khlkh",
+      "guid": "983553ec-ef2b-49cd-94e1-d0fde9412081",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "0bda710f-52fb-49b6-aacf-815b4a997fe6"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "bd21d2f4-93f3-4186-bd73-b8410d37434a"
+        },
+        {
+          "label": "trigger",
+          "id": "02a946ce-b0c5-49b9-80b3-4512a8aa9d94"
+        }
+      ],
+      "x": 1758,
+      "y": 636,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "hlhiklg",
+      "guid": "6c1962d8-cbd7-4b78-a5a3-e09911a98a75",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "c426e2f6-d9b4-4929-8f1c-8bc51e097304"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "30ddc6a7-34de-4482-aa0e-fe3c327dd190"
+        },
+        {
+          "label": "trigger",
+          "id": "ea674467-bbf3-4d63-a2ca-1d385f6ff51e"
+        }
+      ],
+      "x": 1760,
+      "y": 859,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "command",
+      "name": "Tclose",
+      "guid": "c3a85dba-d84c-4f5c-a526-6e305d60401e",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "8a4175a1-1dfd-486a-a27e-47e8a5feb61f"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1562,
+      "y": 1134
+    },
+    {
+      "type": "command",
+      "name": "Tc",
+      "guid": "8c6dfa74-9817-4068-ad45-1a94e0b76f29",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "8a4175a1-1dfd-486a-a27e-47e8a5feb61f"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1551,
+      "y": 1208
+    },
+    {
+      "type": "command",
+      "name": "tc",
+      "guid": "2326b608-b395-41bf-aa4e-a58a5d64c189",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "8a4175a1-1dfd-486a-a27e-47e8a5feb61f"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1549,
+      "y": 1285
+    },
+    {
+      "type": "command",
+      "name": "tclose",
+      "guid": "d24be12a-3cb3-4427-bff6-879e5b6ab552",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "8a4175a1-1dfd-486a-a27e-47e8a5feb61f"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 1543,
+      "y": 1364
+    },
+    {
+      "type": "response",
+      "name": "fahjafhk",
+      "guid": "8a4175a1-1dfd-486a-a27e-47e8a5feb61f",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "fee9fb2e-4b59-41ed-b0b5-8b5817249622"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c3a85dba-d84c-4f5c-a526-6e305d60401e"
+        },
+        {
+          "label": "trigger",
+          "id": "8c6dfa74-9817-4068-ad45-1a94e0b76f29"
+        },
+        {
+          "label": "trigger",
+          "id": "2326b608-b395-41bf-aa4e-a58a5d64c189"
+        },
+        {
+          "label": "trigger",
+          "id": "d24be12a-3cb3-4427-bff6-879e5b6ab552"
+        }
+      ],
+      "x": 1769,
+      "y": 1125,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": ";hk",
+      "guid": "2ac95171-0f8a-44a3-b5ae-1828541b6ead",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "50e610b1-9aac-41e0-8863-110b53a3752a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c426e2f6-d9b4-4929-8f1c-8bc51e097304"
+        }
+      ],
+      "x": 2165,
+      "y": 912,
+      "rtype": "Message",
+      "rsubtype": "Send DM",
+      "formdata": [
+        "msg",
+        "${tempVars.AcceptUser.id}",
+        "Ваша заявка была __**рассмотрена**__ и __**одобрена**__. Желаем вам удачи.",
+        "00FF99",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "formnames": [
+        "msgtype",
+        "userid",
+        "msg",
+        "color",
+        "title",
+        "url",
+        "author",
+        "description",
+        "thumbnail",
+        "image",
+        "timestamp"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "dafshaf",
+      "guid": "ba1c4dff-fadc-4a35-bfd9-43c28f11e801",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ComDe",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "7800dae2-4df1-4c70-99ea-068979301d27"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "0bda710f-52fb-49b6-aacf-815b4a997fe6"
+        }
+      ],
+      "x": 2188,
+      "y": 659,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "ComDe",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "fjl",
+      "guid": "0bda710f-52fb-49b6-aacf-815b4a997fe6",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ba1c4dff-fadc-4a35-bfd9-43c28f11e801"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "983553ec-ef2b-49cd-94e1-d0fde9412081"
+        }
+      ],
+      "x": 1997,
+      "y": 669,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "RefuseUser",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "fjl_1",
+      "guid": "c426e2f6-d9b4-4929-8f1c-8bc51e097304",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "2ac95171-0f8a-44a3-b5ae-1828541b6ead"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "6c1962d8-cbd7-4b78-a5a3-e09911a98a75"
+        }
+      ],
+      "x": 1955,
+      "y": 915,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "AcceptUser",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": ";hk_1",
+      "guid": "7800dae2-4df1-4c70-99ea-068979301d27",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "9c3b684b-8550-4275-9d6f-66a9ab473810"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ba1c4dff-fadc-4a35-bfd9-43c28f11e801"
+        }
+      ],
+      "x": 2371,
+      "y": 668,
+      "rtype": "Message",
+      "rsubtype": "Send DM",
+      "formdata": [
+        "msg",
+        "${tempVars.RefuseUser.id}",
+        "Ваша заявка была __**рассмотрена**__ и __**отклонена**__. Комментарий администратора: ``${tempVars.ComDe}``",
+        "00FF99",
+        "",
+        "",
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "formnames": [
+        "msgtype",
+        "userid",
+        "msg",
+        "color",
+        "title",
+        "url",
+        "author",
+        "description",
+        "thumbnail",
+        "image",
+        "timestamp"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_2",
+      "guid": "9c3b684b-8550-4275-9d6f-66a9ab473810",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "4f4ed46d-84dc-43e5-90b6-0b6e1fe4e22b"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7800dae2-4df1-4c70-99ea-068979301d27"
+        }
+      ],
+      "x": 2593,
+      "y": 665,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "CF0000",
+        "Ticket Tool",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор:<@${dbsVars.CommandAuthor.id}>\nОтклонил заявку: \n<@${tempVars.RefuseUser.id}>\nКомментарий:\n``${tempVars.ComDe}``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_2_1",
+      "guid": "50e610b1-9aac-41e0-8863-110b53a3752a",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "57653c35-db25-42b0-acf6-610f26b8bbad"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "2ac95171-0f8a-44a3-b5ae-1828541b6ead"
+        }
+      ],
+      "x": 2391,
+      "y": 888,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "00FF8C",
+        "Ticket Tool",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор:<@${dbsVars.CommandAuthor.id}>\nПринял заявку: \n<@${tempVars.RefuseUser.id}>",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "раы",
+      "guid": "57653c35-db25-42b0-acf6-610f26b8bbad",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "31e7c7ed-1d39-4ed4-ac6e-f99ac7b79ec8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "50e610b1-9aac-41e0-8863-110b53a3752a"
+        }
+      ],
+      "x": 2587,
+      "y": 893,
+      "rtype": "User Action",
+      "rsubtype": "Add Role to User",
+      "formdata": [
+        "${tempVars.AcceptUser.id}",
+        "🤨Участник"
+      ],
+      "formnames": [
+        "user",
+        "roleName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "рфыарфыар",
+      "guid": "4f4ed46d-84dc-43e5-90b6-0b6e1fe4e22b",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9c3b684b-8550-4275-9d6f-66a9ab473810"
+        }
+      ],
+      "x": 2792,
+      "y": 633,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete Channel",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        ""
+      ],
+      "formnames": [
+        "channelname",
+        "reason"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "рфыарфыар_1",
+      "guid": "31e7c7ed-1d39-4ed4-ac6e-f99ac7b79ec8",
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "57653c35-db25-42b0-acf6-610f26b8bbad"
+        }
+      ],
+      "x": 2788,
+      "y": 878,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete Channel",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        ""
+      ],
+      "formnames": [
+        "channelname",
+        "reason"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "рфыарфыар_1_1",
+      "guid": "eb65f2c7-3457-4db9-9213-db95974c1bca",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "30c95a29-4483-4ff0-b4dd-313bf221a8ea"
+        }
+      ],
+      "x": 2850,
+      "y": 1188,
+      "rtype": "Channel Action",
+      "rsubtype": "Delete Channel",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        ""
+      ],
+      "formnames": [
+        "channelname",
+        "reason"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "ClearLog_1_1_2_2",
+      "guid": "30c95a29-4483-4ff0-b4dd-313bf221a8ea",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "eb65f2c7-3457-4db9-9213-db95974c1bca"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "ec6a8d63-959c-4d9c-a44f-9d16a0997e72"
+        }
+      ],
+      "x": 2492,
+      "y": 1169,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "1101575982495838338",
+        "AE00FF",
+        "Ticket Tool",
+        "",
+        "Администрационные логи Kaminari no Ikari",
+        "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+        "",
+        "Администратор:<@${dbsVars.CommandAuthor.id}>\nСоздал тикет: <@${tempVars.TcUser.id}>\nКомментарий:\n``${tempVars.ComTC}``",
+        "",
+        "",
+        "",
+        "BOOL_TRUE@@",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "khfd",
+      "guid": "ec6a8d63-959c-4d9c-a44f-9d16a0997e72",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "ComTC",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "30c95a29-4483-4ff0-b4dd-313bf221a8ea"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fee9fb2e-4b59-41ed-b0b5-8b5817249622"
+        }
+      ],
+      "x": 2261,
+      "y": 1162,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "ComTC",
+        "Text",
+        "temp",
+        "2+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "jhlh;j",
+      "guid": "fee9fb2e-4b59-41ed-b0b5-8b5817249622",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "ec6a8d63-959c-4d9c-a44f-9d16a0997e72"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "8a4175a1-1dfd-486a-a27e-47e8a5feb61f"
+        }
+      ],
+      "x": 1987,
+      "y": 1174,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned User",
+      "formdata": [
+        "TcUser",
+        "User",
+        "temp"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "jiklhyiogo",
+      "guid": "826e8e92-6693-4afb-8363-5e127d06b00e",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "42004eda-eb0f-4e6c-92e9-9ade8efc1b9a"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f89afd5c-8912-48d0-bed2-b2159421f4cf"
+        }
+      ],
+      "x": 2302,
+      "y": 134,
+      "rtype": "Message",
+      "rsubtype": "Reply Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "Ваш тикет создан.",
+        "true"
+      ],
+      "formnames": [
+        "msgid",
+        "replytext",
+        "mentionuser"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "command",
+      "name": ".avatar",
+      "guid": "5b4b3d24-c1a7-4a75-832a-b6b7a604b7b5",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "b0af4f95-6912-4301-b122-60c40b94820a"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 677,
+      "y": 1000
+    },
+    {
+      "type": "command",
+      "name": "Avatar",
+      "guid": "0aaf56f2-02b7-48b5-a8b4-140f9369db97",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "b0af4f95-6912-4301-b122-60c40b94820a"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 643,
+      "y": 1103
+    },
+    {
+      "type": "response",
+      "name": "dggd",
+      "guid": "b0af4f95-6912-4301-b122-60c40b94820a",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5b4b3d24-c1a7-4a75-832a-b6b7a604b7b5"
+        },
+        {
+          "label": "trigger",
+          "id": "0aaf56f2-02b7-48b5-a8b4-140f9369db97"
+        }
+      ],
+      "x": 947,
+      "y": 983,
+      "rtype": "Control",
+      "rsubtype": "Multiple Input",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "нкш",
+      "guid": "fa99ae0c-99b6-4535-85e3-530b3b20f320",
+      "reactionFields": [],
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "da8a4893-f9bb-4fe2-ab42-cd5f47384ad8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "9c7dc3f5-8149-4cc3-9f10-bb9991ac0df2"
+        }
+      ],
+      "x": 554,
+      "y": 1795,
+      "rtype": "Channel Action",
+      "rsubtype": "Check Channel ID",
+      "formdata": [
+        "${tempVars.TicketChannel.id}",
+        "чат не является тикетом"
+      ],
+      "formnames": [
+        "channelid",
+        "nomatch"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "fhkf",
+      "guid": "e3e16204-c7a2-480a-b5ba-b1f24b9bd217",
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": []
+        }
+      ],
+      "x": 986,
+      "y": 4899,
+      "rtype": "Variable",
+      "rsubtype": "Edit Variable",
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "gjdsjg_1",
+      "guid": "e728e818-434e-4642-88a4-a22e0f9c9847",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "684fdd73-8f9e-4fda-808d-96b54ae38b4d"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "3c4419f9-fb28-42c5-bacb-053ede286037"
+        }
+      ],
+      "x": 237,
+      "y": 2575,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${dbsVars.CommandChannel.id}",
+        "F2FF00",
+        "➡️ ТРЕНИРОВКИ",
+        "",
+        "Правила Kaminari no ikari",
+        "",
+        "",
+        "Следующие правила и меры действуют на тренировках клана:\n1.Устное предупреждение выдается в случае:\n▫️Несоблюдения указаний и неслушания тренера.\n▫️Создания помех и препятствий для других участников тренировки.\n▫️Проявления чрезмерной токсичности и угнетения в отношении других участников.\n2.Предупреждение \"tWarn\" будет выдано в случае:\n▫️Рейда тренировки, что включает убийство тренера или участников клана с неоднократным повторением.\n▫️Накопления 3-х устных предупреждений.\n3.Игрок будет исключен из клана в следующих случаях:\n▫️Если пропустит тренировку 3 раза подряд.\n▫️При получении 5 предупреждений \"tWarn\".\n4.Игрок может быть исключен из текущей тренировки в случае получения предупреждения \"tWarn\".\n5.Возможность отсутствия на тренировках должна быть уточнена у проводящего тренера. Просьба уведомить тренера о планируемом отсутствии на тренировке, с предоставлением подробностей и возможных сроков отсутствия.",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "раыра",
+      "guid": "c7b34822-6dcc-4908-bebb-8fa408c4eadc",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f3f1c05c-2675-47f4-aefb-803da0bed207"
+        }
+      ],
+      "x": 1233,
+      "y": 2100,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1",
+      "guid": "f17f56cb-d069-436c-bac0-9ccace169d82",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "7e960cba-f77a-4584-9352-e52bc7901057"
+        }
+      ],
+      "x": 1172,
+      "y": 1248,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1_1",
+      "guid": "d116077b-ceda-450a-9a8b-6d55324329ee",
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "4716df54-70a8-4f07-bbb2-284448e49dc5"
+        }
+      ],
+      "x": 1383,
+      "y": 1725,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1_1_1",
+      "guid": "9d342b79-285b-43d0-a553-f2c653962289",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "f090f7a3-20a4-4a85-ac53-73243d7d6cf9"
+        }
+      ],
+      "x": 1285,
+      "y": 813,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1_1_1_1",
+      "guid": "7e4450fa-0361-4db9-b8ce-a9db52dd544f",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fb2db45a-00b9-4b26-81d7-c991219cd4a7"
+        }
+      ],
+      "x": 1241,
+      "y": 522,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1_1_1_1_1",
+      "guid": "8140baa4-6215-4681-9b95-dacdabfbac7b",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5a946f9f-422c-4e28-a929-ff1878f30fbd"
+        }
+      ],
+      "x": 1110,
+      "y": 371,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1_1_1_1_1_1",
+      "guid": "77f3a29b-2167-4e4c-9f44-c1d9f9222391",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "09c54a70-15f9-488b-a8be-076edecb1cb6"
+        }
+      ],
+      "x": 975,
+      "y": 166,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_1_1_1_1_1_1_1",
+      "guid": "42004eda-eb0f-4e6c-92e9-9ade8efc1b9a",
+      "embedfields": [],
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "826e8e92-6693-4afb-8363-5e127d06b00e"
+        }
+      ],
+      "x": 2525,
+      "y": 130,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_2",
+      "guid": "029b4f28-2f77-47d6-9fe3-00a59f82d373",
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "c96f8510-4acd-4728-a5d5-e0bf2da5e74c"
+        }
+      ],
+      "x": 1066,
+      "y": 2372,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    },
+    {
+      "type": "command",
+      "name": "news",
+      "guid": "1feb6731-aca6-4d29-9027-4bda09cf8b4d",
+      "outputs": [
+        {
+          "label": "responses",
+          "connections": [
+            "fb61a898-0e72-4fcf-8cf5-21782e180328"
+          ]
+        }
+      ],
+      "inputs": [],
+      "x": 23,
+      "y": 2819,
+      "perms": [
+        "mod_l3"
+      ]
+    },
+    {
+      "type": "response",
+      "name": "gsfgs",
+      "guid": "5e0ebf9b-26e0-4c75-94f1-37f91147aa47",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "0b7ca0b2-7cb2-4790-bc0b-e014bb7bc40e"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "32ee9db2-db0a-44c2-a4fb-34eba822b3a8"
+        }
+      ],
+      "x": 712,
+      "y": 2828,
+      "rtype": "Message",
+      "rsubtype": "Send Embed",
+      "formdata": [
+        "${tempVars.chatTosend}",
+        "FFFFFF",
+        "${tempVars.title}",
+        "",
+        "Kaminari no Ikari",
+        "",
+        "",
+        "${tempVars.texttosend}",
+        "",
+        "",
+        "",
+        "false",
+        "",
+        "temp"
+      ],
+      "formnames": [
+        "channelname",
+        "color",
+        "title",
+        "url",
+        "authorname",
+        "authorimageurl",
+        "authorlink",
+        "description",
+        "thumbnail",
+        "image",
+        "footer",
+        "timestamp",
+        "saveToVariable",
+        "saveToVariableType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "chatTosend",
+      "guid": "fb61a898-0e72-4fcf-8cf5-21782e180328",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "e6f85286-d278-47e1-b788-80071d233287"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "1feb6731-aca6-4d29-9027-4bda09cf8b4d"
+        }
+      ],
+      "x": 190,
+      "y": 2827,
+      "rtype": "Variable",
+      "rsubtype": "Get Mentioned Channel",
+      "formdata": [
+        "chatTosend",
+        "temp"
+      ],
+      "formnames": [
+        "varName",
+        "varType"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "TextToSend",
+      "guid": "32ee9db2-db0a-44c2-a4fb-34eba822b3a8",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "texttosend",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "5e0ebf9b-26e0-4c75-94f1-37f91147aa47"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "e6f85286-d278-47e1-b788-80071d233287"
+        }
+      ],
+      "x": 523,
+      "y": 2816,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "texttosend",
+        "Text",
+        "temp",
+        "3+"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "gfsgfsgsf",
+      "guid": "e6f85286-d278-47e1-b788-80071d233287",
+      "reactionFields": [],
+      "embedfields": [],
+      "saveToVariable": "title",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": [
+            "32ee9db2-db0a-44c2-a4fb-34eba822b3a8"
+          ]
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "fb61a898-0e72-4fcf-8cf5-21782e180328"
+        }
+      ],
+      "x": 367,
+      "y": 2812,
+      "rtype": "Variable",
+      "rsubtype": "Store Value in Variable",
+      "formdata": [
+        "title",
+        "Text",
+        "temp",
+        "2"
+      ],
+      "formnames": [
+        "varname",
+        "vartype",
+        "saveVarType",
+        "param"
+      ],
+      "messageActionRows": [],
+      "valueFields": []
+    },
+    {
+      "type": "response",
+      "name": "раыра_2_1",
+      "guid": "0b7ca0b2-7cb2-4790-bc0b-e014bb7bc40e",
+      "embedfields": [],
+      "saveToVariable": "",
+      "saveToVariableType": "temp",
+      "outputs": [
+        {
+          "label": "next response",
+          "connections": []
+        }
+      ],
+      "inputs": [
+        {
+          "label": "trigger",
+          "id": "5e0ebf9b-26e0-4c75-94f1-37f91147aa47"
+        }
+      ],
+      "x": 903,
+      "y": 2873,
+      "rtype": "Message",
+      "rsubtype": "Delete Message",
+      "formdata": [
+        "${dbsVars.CommandMessage.id}",
+        "${dbsVars.CommandChannel.id}"
+      ],
+      "formnames": [
+        "varname",
+        "channelName"
+      ],
+      "messageActionRows": []
+    }
+  ]
+}

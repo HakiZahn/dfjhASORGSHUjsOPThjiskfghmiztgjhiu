@@ -1,0 +1,2324 @@
+{
+  "command": [
+    {
+      "name": "clr",
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "gc",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "clearto",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "dfga",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "${tempVars.clearto}"
+        },
+        {
+          "name": "ClearLog",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Clear",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nУдалено слов:**${tempVars.clearto}**",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Clear",
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "gc",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "clearto",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "dfga",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "${tempVars.clearto}"
+        },
+        {
+          "name": "ClearLog",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Clear",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nУдалено слов:**${tempVars.clearto}**",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Clr",
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "gc",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "clearto",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "dfga",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "${tempVars.clearto}"
+        },
+        {
+          "name": "ClearLog",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Clear",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nУдалено слов:**${tempVars.clearto}**",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "clear",
+      "perms": [
+        "mod_l2",
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "gc",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "clearto",
+          "vartype": "Number",
+          "savevartype": "temp",
+          "param": "1"
+        },
+        {
+          "name": "dfga",
+          "category": "Channel Action",
+          "type": "Delete All Messages",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "msgcount": "${tempVars.clearto}"
+        },
+        {
+          "name": "ClearLog",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Clear",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nУдалено слов:**${tempVars.clearto}**",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "mute",
+      "perms": [
+        "mod_l1",
+        "mod_l2",
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "sfa",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "UserToMute",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "TimeToTimeOutBlyat",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "TimeoutTime",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2"
+        },
+        {
+          "name": "ReasonToTimeOutBlyat",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "TimeoutReason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "3+"
+        },
+        {
+          "name": "timeout",
+          "category": "User Action",
+          "type": "Timeout",
+          "messageActionRows": [],
+          "user": "${tempVars.UserToMute.id}",
+          "time": "${tempVars.TimeoutTime}",
+          "reason": "${tempVars.TimeoutReason}"
+        },
+        {
+          "name": "ClearLog_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Mute",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор: <@${dbsVars.CommandAuthor.id}>\nЗамучен: <@${tempVars.UserToMute.id}>\nВремя мута: **${tempVars.TimeoutTime}**\nПричина: \n``${tempVars.TimeoutReason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Mute",
+      "perms": [
+        "mod_l1",
+        "mod_l2",
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "sfa",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "UserToMute",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "TimeToTimeOutBlyat",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "TimeoutTime",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2"
+        },
+        {
+          "name": "ReasonToTimeOutBlyat",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "TimeoutReason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "3+"
+        },
+        {
+          "name": "timeout",
+          "category": "User Action",
+          "type": "Timeout",
+          "messageActionRows": [],
+          "user": "${tempVars.UserToMute.id}",
+          "time": "${tempVars.TimeoutTime}",
+          "reason": "${tempVars.TimeoutReason}"
+        },
+        {
+          "name": "ClearLog_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Mute",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор: <@${dbsVars.CommandAuthor.id}>\nЗамучен: <@${tempVars.UserToMute.id}>\nВремя мута: **${tempVars.TimeoutTime}**\nПричина: \n``${tempVars.TimeoutReason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "ban",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "df",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "UserBan",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "adgadg",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ReasonBan",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "BANs",
+          "category": "User Action",
+          "type": "Ban User",
+          "messageActionRows": [],
+          "user": "${tempVars.UserBan.id}",
+          "reason": "${tempVars.ReasonBan}",
+          "days": "999"
+        },
+        {
+          "name": "ClearLog_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Ban",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nЗабанил: <@${tempVars.UserBan.id}>\nПричина:\n``${tempVars.ReasonBan}``\n",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Ban",
+      "perms": [],
+      "actions": [
+        {
+          "name": "df",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "UserBan",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "adgadg",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ReasonBan",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "BANs",
+          "category": "User Action",
+          "type": "Ban User",
+          "messageActionRows": [],
+          "user": "${tempVars.UserBan.id}",
+          "reason": "${tempVars.ReasonBan}",
+          "days": "999"
+        },
+        {
+          "name": "ClearLog_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "Ban",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nЗабанил: <@${tempVars.UserBan.id}>\nПричина:\n``${tempVars.ReasonBan}``\n",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Blacklist",
+      "actions": [
+        {
+          "name": "sgsdg",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "BlUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "adf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "Reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "fsdafs",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.BlUser.id}",
+          "rolename": "🐒Черный список"
+        },
+        {
+          "name": "ClearLog_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "🐒Черный список",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nВыдан: <@${tempVars.BlUser.id}>\nПричина:\n``${tempVars.Reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "blacklist",
+      "actions": [
+        {
+          "name": "sgsdg",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "BlUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "adf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "Reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "fsdafs",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.BlUser.id}",
+          "rolename": "🐒Черный список"
+        },
+        {
+          "name": "ClearLog_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "🐒Черный список",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nВыдан: <@${tempVars.BlUser.id}>\nПричина:\n``${tempVars.Reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "bl",
+      "actions": [
+        {
+          "name": "sgsdg",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "BlUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "adf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "Reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "fsdafs",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.BlUser.id}",
+          "rolename": "🐒Черный список"
+        },
+        {
+          "name": "ClearLog_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "🐒Черный список",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nВыдан: <@${tempVars.BlUser.id}>\nПричина:\n``${tempVars.Reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Bl",
+      "actions": [
+        {
+          "name": "sgsdg",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "BlUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "adf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "Reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "fsdafs",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.BlUser.id}",
+          "rolename": "🐒Черный список"
+        },
+        {
+          "name": "ClearLog_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "B7FF00",
+          "title": "🐒Черный список",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nВыдан: <@${tempVars.BlUser.id}>\nПричина:\n``${tempVars.Reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "info4ardlgjnauodhgouarhegyiwasrhnuyhlg",
+      "perms": [],
+      "actions": [
+        {
+          "name": "gjdsjg_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "F2FF00",
+          "title": "➡️ ТРЕНИРОВКИ",
+          "url": "",
+          "authorname": "Правила Kaminari no ikari",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Следующие правила и меры действуют на тренировках клана:\n1.Устное предупреждение выдается в случае:\n▫️Несоблюдения указаний и неслушания тренера.\n▫️Создания помех и препятствий для других участников тренировки.\n▫️Проявления чрезмерной токсичности и угнетения в отношении других участников.\n2.Предупреждение \"tWarn\" будет выдано в случае:\n▫️Рейда тренировки, что включает убийство тренера или участников клана с неоднократным повторением.\n▫️Накопления 3-х устных предупреждений.\n3.Игрок будет исключен из клана в следующих случаях:\n▫️Если пропустит тренировку 3 раза подряд.\n▫️При получении 5 предупреждений \"tWarn\".\n4.Игрок может быть исключен из текущей тренировки в случае получения предупреждения \"tWarn\".\n5.Возможность отсутствия на тренировках должна быть уточнена у проводящего тренера. Просьба уведомить тренера о планируемом отсутствии на тренировке, с предоставлением подробностей и возможных сроков отсутствия.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "dfa",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "AD7C00",
+          "title": "➡️ ДОПОЛНИТЕЛЬНО",
+          "url": "",
+          "authorname": "Правила Kaminari no Iklari",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "✅1. вызов модерации\n▫️«.911 @нарушитель, пункт правил» (e.x **.911 @HakiZahn#1234 1.2**)\n-указывая всё в правильной последовательности шансы эффективно выполненной работы администрацией значительно повышаются! также важно - неправильно оформленная жалоба может быть проигнорирована.\n✅ 2. степень нарушений:\n▫️-администрация уполномочена сама оценивать степень нарушений правил сервера, т.е. определить какое кол-во символов в чате является флудом а какое нет и т.п.\n\n✅ 3. о блокировках:\n▫️-администрация не обязана всегда выдавать \"предупреждение\" в случае если участник совершил своё первое нарушение. Первая блокировка участника может стать и его последней.\n\n✅4. охват правил:\n▫️-правила сервера предназначены для этого самого сервера, а потому их распространение на лс, сторонние сервера или же на приватные беседы не рассматривается и не является нарушением (допустимы исключения).\n\n✅5. нововведения:\n▫️-пункты правил, дополнительная информация и т.п. время от времени могут дорабатываться либо же редактироваться.\nПомните - незнание правил не освобождает вас от ответственности!\n\n✅ 6. исключения из правил:\n▫️-некоторые из пунктов правил могут не распространяться на администрацию если это в интересах сервера и только.\n\n✅6. участники - администрация:\n▫️-ознакамливаясь с правилами сервера следует учесть что под участниками воспринимается также и модерация/администрация сервера.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "dfa_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "color": "19D600",
+          "title": "➡️ РОЛИ:",
+          "url": "",
+          "authorname": "Правила Kaminari no Iklari",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Глава\n▫️- Глава клана\nЗам главы\n▫️- Заместитель главы, выступает тренером при необходимости, решает вопросы.\n3.Куратор\n▫️-Отвечает за набор участников в клан\n4.Helper\n▫️-Помогает игрокам сервера, следит за соблюдениями правил\n5.Элита\n▫️-Доступ к закрытым чатам, выделения меж другими участниками, поддержка и реклама нашего клана\n6.Натренерованный\n▫️Выделение меж другими участниками. Выдаётся за присутствие на тренировках\nЧерный список\n▫️- Роль «Чёрного Списка» для особо провинившихся участников сервера. Обладатель данной роли рискует получить бан при первом же нарушении\n(чаще даётся за намеренное нарушение).\n8.Гость\n▫️-Не является членом клана.",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        }
+      ]
+    },
+    {
+      "name": "Tropne",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "dfadafa",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "dfadafa_2",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "VIEW_CHANNEL",
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "ClearLog_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "0DFF00",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Начал тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "tropne",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "dfadafa",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "dfadafa_2",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "VIEW_CHANNEL",
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "ClearLog_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "0DFF00",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Начал тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "tro",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "dfadafa",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "dfadafa_2",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "VIEW_CHANNEL",
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "ClearLog_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "0DFF00",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Начал тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Tro",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "dfadafa",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "dfadafa_2",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "VIEW_CHANNEL",
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "ClearLog_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "0DFF00",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Начал тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "trc",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "нкш",
+          "category": "Channel Action",
+          "type": "Check Channel ID",
+          "messageActionRows": [],
+          "channelid": "${tempVars.TicketChannel.id}",
+          "nomatch": "чат не является тикетом"
+        },
+        {
+          "name": "dfadafa_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "dfadafa_2_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "FF0000",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Завершил тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Trc",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "нкш",
+          "category": "Channel Action",
+          "type": "Check Channel ID",
+          "messageActionRows": [],
+          "channelid": "${tempVars.TicketChannel.id}",
+          "nomatch": "чат не является тикетом"
+        },
+        {
+          "name": "dfadafa_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "dfadafa_2_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "FF0000",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Завершил тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Trclose",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "нкш",
+          "category": "Channel Action",
+          "type": "Check Channel ID",
+          "messageActionRows": [],
+          "channelid": "${tempVars.TicketChannel.id}",
+          "nomatch": "чат не является тикетом"
+        },
+        {
+          "name": "dfadafa_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "dfadafa_2_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "FF0000",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Завершил тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "trclose",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "нкш",
+          "category": "Channel Action",
+          "type": "Check Channel ID",
+          "messageActionRows": [],
+          "channelid": "${tempVars.TicketChannel.id}",
+          "nomatch": "чат не является тикетом"
+        },
+        {
+          "name": "dfadafa_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102178862655361025",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "USE_EXTERNAL_EMOJIS"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "dfadafa_2_1",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "1102163925467930716",
+          "permid": "1101568345830068345",
+          "permissions": [
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Deny"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "FF0000",
+          "title": "Тренировки",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Тренер: <@${dbsVars.CommandAuthor.id}>\n``Завершил тренировку.``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "warn",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "fdfafdaf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "dahahgdaadgh",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "WarnMod",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "DGAGD",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1102047698166747136",
+          "color": "FF7300",
+          "title": "Warn",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Администратор <@${tempVars.WarnMod.id}> получил выговор \nПричина:\n``${tempVars.reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "FF0000",
+          "title": "Warn",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор: <@${dbsVars.CommandAuthor.id}>\nВыдано:<@${tempVars.WarnMod.id}>\nПричина:\n``${tempVars.reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Warn",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "fdfafdaf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "dahahgdaadgh",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "WarnMod",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "DGAGD",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1102047698166747136",
+          "color": "FF7300",
+          "title": "Warn",
+          "url": "",
+          "authorname": "",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "Администратор <@${tempVars.WarnMod.id}> получил выговор \nПричина:\n``${tempVars.reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "FF0000",
+          "title": "Warn",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор: <@${dbsVars.CommandAuthor.id}>\nВыдано:<@${tempVars.WarnMod.id}>\nПричина:\n``${tempVars.reason}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "911",
+      "actions": [
+        {
+          "name": "stfkdghlkd",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "911User",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "dagadg",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "Reason",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "dfadfa",
+          "category": "Message",
+          "type": "Reply Message",
+          "messageActionRows": [],
+          "msgid": "${dbsVars.CommandMessage.id}",
+          "replytext": "Администрация вызвана. ",
+          "mentionuser": "true"
+        },
+        {
+          "name": "ClearLog_1_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101991716967419984",
+          "color": "1500FF",
+          "title": "911",
+          "url": "",
+          "authorname": "Kaminari no Ikari ",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Вызвал <@${dbsVars.CommandAuthor.id}> \nВызвали на: <@${tempVars.911User.id}>\nЧат: <#${dbsVars.CommandChannel.id}>\nПричина: \n``${tempVars.Reason}``\n<@&1102014618437685278>",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_2",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Ticket",
+      "actions": [
+        {
+          "name": "hfah",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "ticketN",
+          "min": "100000",
+          "max": "10000000000",
+          "savevartype": "temp"
+        },
+        {
+          "name": "sfhashf",
+          "category": "Channel Action",
+          "type": "Create Channel",
+          "messageActionRows": [],
+          "channelname": "Ticket-${tempVars.ticketN}",
+          "chancategory": "1102035329344606328",
+          "reason": "",
+          "channeltype": "Text",
+          "savetovariable": "TicketChannel",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "gjd",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "${tempVars.TicketChannel.id}",
+          "permid": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "VIEW_CHANNEL",
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "jkl;jh;hj;k",
+          "category": "Message",
+          "type": "Send Message",
+          "messageActionRows": [],
+          "channelname": "${tempVars.TicketChannel.id}",
+          "messagetext": "Тикет создан.\nОжидайте ответа от администрации. Просьба не флудить пингами администрации. Мы стараемся отвечать на тикеты быстро, насколько это возможно.\n``Если вы хотите получить форму для вступления в клан, используйте команду .Application.``",
+          "savetovariable": "Kek",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "jiklhyiogo",
+          "category": "Message",
+          "type": "Reply Message",
+          "messageActionRows": [],
+          "msgid": "${dbsVars.CommandMessage.id}",
+          "replytext": "Ваш тикет создан.",
+          "mentionuser": "true"
+        },
+        {
+          "name": "раыра_1_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "ticket",
+      "actions": [
+        {
+          "name": "hfah",
+          "category": "Variable",
+          "type": "Generate Random Number",
+          "messageActionRows": [],
+          "varname": "ticketN",
+          "min": "100000",
+          "max": "10000000000",
+          "savevartype": "temp"
+        },
+        {
+          "name": "sfhashf",
+          "category": "Channel Action",
+          "type": "Create Channel",
+          "messageActionRows": [],
+          "channelname": "Ticket-${tempVars.ticketN}",
+          "chancategory": "1102035329344606328",
+          "reason": "",
+          "channeltype": "Text",
+          "savetovariable": "TicketChannel",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "gjd",
+          "category": "Channel Action",
+          "type": "Update Channel Permissions",
+          "messageActionRows": [],
+          "channelname": "${tempVars.TicketChannel.id}",
+          "permid": "${dbsVars.CommandAuthor.id}",
+          "permissions": [
+            "VIEW_CHANNEL",
+            "SEND_MESSAGES",
+            "SEND_TTS_MESSAGES",
+            "EMBED_LINKS",
+            "ATTACH_FILES",
+            "READ_MESSAGE_HISTORY",
+            "CONNECT",
+            "SPEAK"
+          ],
+          "allow": "Allow"
+        },
+        {
+          "name": "jkl;jh;hj;k",
+          "category": "Message",
+          "type": "Send Message",
+          "messageActionRows": [],
+          "channelname": "${tempVars.TicketChannel.id}",
+          "messagetext": "Тикет создан.\nОжидайте ответа от администрации. Просьба не флудить пингами администрации. Мы стараемся отвечать на тикеты быстро, насколько это возможно.\n``Если вы хотите получить форму для вступления в клан, используйте команду .Application.``",
+          "savetovariable": "Kek",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "jiklhyiogo",
+          "category": "Message",
+          "type": "Reply Message",
+          "messageActionRows": [],
+          "msgid": "${dbsVars.CommandMessage.id}",
+          "replytext": "Ваш тикет создан.",
+          "mentionuser": "true"
+        },
+        {
+          "name": "раыра_1_1_1_1_1_1_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    },
+    {
+      "name": "Application",
+      "perms": [],
+      "actions": [
+        {
+          "name": "пвф",
+          "category": "Message",
+          "type": "Reply Message",
+          "messageActionRows": [],
+          "msgid": "${dbsVars.CommandMessage.id}",
+          "replytext": "Форма для вступления в клан:\n```1)Имя, возраст \n2)Имя пользователя в Discord \n3)Город проживания и часовой пояс \n4)Игровой ник \n5)Как давно ты играешь в ZO  Насколько хорошо разбираешься в игре и в каких ее аспектах? Какие у тебя игровые достижения? \n6)Какое время ты готов отводить на работу с нашим Discord-сервером по ZO (укажи свободные для этого дни недели и время, когда можешь проявлять активность)? \n7)Что ты можешь предложить, чтобы улучшить наш Discord-сервер? \n8)Если ты что-то еще хочешь нам рассказать, то можешь это сделать здесь ```",
+          "mentionuser": "true"
+        }
+      ]
+    },
+    {
+      "name": "application",
+      "actions": [
+        {
+          "name": "пвф",
+          "category": "Message",
+          "type": "Reply Message",
+          "messageActionRows": [],
+          "msgid": "${dbsVars.CommandMessage.id}",
+          "replytext": "Форма для вступления в клан:\n```1)Имя, возраст \n2)Имя пользователя в Discord \n3)Город проживания и часовой пояс \n4)Игровой ник \n5)Как давно ты играешь в ZO  Насколько хорошо разбираешься в игре и в каких ее аспектах? Какие у тебя игровые достижения? \n6)Какое время ты готов отводить на работу с нашим Discord-сервером по ZO (укажи свободные для этого дни недели и время, когда можешь проявлять активность)? \n7)Что ты можешь предложить, чтобы улучшить наш Discord-сервер? \n8)Если ты что-то еще хочешь нам рассказать, то можешь это сделать здесь ```",
+          "mentionuser": "true"
+        }
+      ]
+    },
+    {
+      "name": "Refuse",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "fjl",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "RefuseUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "dafshaf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ComDe",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": ";hk_1",
+          "category": "Message",
+          "type": "Send DM",
+          "messageActionRows": [],
+          "msgtype": "msg",
+          "userid": "${tempVars.RefuseUser.id}",
+          "msg": "Ваша заявка была __**рассмотрена**__ и __**отклонена**__. Комментарий администратора: ``${tempVars.ComDe}``",
+          "color": "00FF99",
+          "title": "",
+          "url": "",
+          "author": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "timestamp": ""
+        },
+        {
+          "name": "ClearLog_1_1_2",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "CF0000",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nОтклонил заявку: \n<@${tempVars.RefuseUser.id}>\nКомментарий:\n``${tempVars.ComDe}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "рфыарфыар",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "refuse",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "fjl",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "RefuseUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "dafshaf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ComDe",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": ";hk_1",
+          "category": "Message",
+          "type": "Send DM",
+          "messageActionRows": [],
+          "msgtype": "msg",
+          "userid": "${tempVars.RefuseUser.id}",
+          "msg": "Ваша заявка была __**рассмотрена**__ и __**отклонена**__. Комментарий администратора: ``${tempVars.ComDe}``",
+          "color": "00FF99",
+          "title": "",
+          "url": "",
+          "author": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "timestamp": ""
+        },
+        {
+          "name": "ClearLog_1_1_2",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "CF0000",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nОтклонил заявку: \n<@${tempVars.RefuseUser.id}>\nКомментарий:\n``${tempVars.ComDe}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "рфыарфыар",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "accept",
+      "actions": [
+        {
+          "name": "fjl_1",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "AcceptUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": ";hk",
+          "category": "Message",
+          "type": "Send DM",
+          "messageActionRows": [],
+          "msgtype": "msg",
+          "userid": "${tempVars.AcceptUser.id}",
+          "msg": "Ваша заявка была __**рассмотрена**__ и __**одобрена**__. Желаем вам удачи.",
+          "color": "00FF99",
+          "title": "",
+          "url": "",
+          "author": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "timestamp": ""
+        },
+        {
+          "name": "ClearLog_1_1_2_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "00FF8C",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nПринял заявку: \n<@${tempVars.RefuseUser.id}>",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раы",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.AcceptUser.id}",
+          "rolename": "🤨Участник"
+        },
+        {
+          "name": "рфыарфыар_1",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "Accept",
+      "actions": [
+        {
+          "name": "fjl_1",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "AcceptUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": ";hk",
+          "category": "Message",
+          "type": "Send DM",
+          "messageActionRows": [],
+          "msgtype": "msg",
+          "userid": "${tempVars.AcceptUser.id}",
+          "msg": "Ваша заявка была __**рассмотрена**__ и __**одобрена**__. Желаем вам удачи.",
+          "color": "00FF99",
+          "title": "",
+          "url": "",
+          "author": "",
+          "description": "",
+          "thumbnail": "",
+          "image": "",
+          "timestamp": ""
+        },
+        {
+          "name": "ClearLog_1_1_2_1",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "00FF8C",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nПринял заявку: \n<@${tempVars.RefuseUser.id}>",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раы",
+          "category": "User Action",
+          "type": "Add Role to User",
+          "messageActionRows": [],
+          "user": "${tempVars.AcceptUser.id}",
+          "rolename": "🤨Участник"
+        },
+        {
+          "name": "рфыарфыар_1",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "Tclose",
+      "actions": [
+        {
+          "name": "jhlh;j",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "TcUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "khfd",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ComTC",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "ClearLog_1_1_2_2",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "AE00FF",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nСоздал тикет: <@${tempVars.TcUser.id}>\nКомментарий:\n``${tempVars.ComTC}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "рфыарфыар_1_1",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "Tc",
+      "actions": [
+        {
+          "name": "jhlh;j",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "TcUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "khfd",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ComTC",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "ClearLog_1_1_2_2",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "AE00FF",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nСоздал тикет: <@${tempVars.TcUser.id}>\nКомментарий:\n``${tempVars.ComTC}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "рфыарфыар_1_1",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "tc",
+      "actions": [
+        {
+          "name": "jhlh;j",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "TcUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "khfd",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ComTC",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "ClearLog_1_1_2_2",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "AE00FF",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nСоздал тикет: <@${tempVars.TcUser.id}>\nКомментарий:\n``${tempVars.ComTC}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "рфыарфыар_1_1",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": "tclose",
+      "actions": [
+        {
+          "name": "jhlh;j",
+          "category": "Variable",
+          "type": "Get Mentioned User",
+          "messageActionRows": [],
+          "varname": "TcUser",
+          "vartype": "User",
+          "savevartype": "temp"
+        },
+        {
+          "name": "khfd",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "ComTC",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2+"
+        },
+        {
+          "name": "ClearLog_1_1_2_2",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "1101575982495838338",
+          "color": "AE00FF",
+          "title": "Ticket Tool",
+          "url": "",
+          "authorname": "Администрационные логи Kaminari no Ikari",
+          "authorimageurl": "https://cdn.discordapp.com/attachments/809038946876522537/1111668126438932490/0dc5aa86e21d0e504b330a70db9a4245.png",
+          "authorlink": "",
+          "description": "Администратор:<@${dbsVars.CommandAuthor.id}>\nСоздал тикет: <@${tempVars.TcUser.id}>\nКомментарий:\n``${tempVars.ComTC}``",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "BOOL_TRUE@@",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "рфыарфыар_1_1",
+          "category": "Channel Action",
+          "type": "Delete Channel",
+          "messageActionRows": [],
+          "channelname": "${dbsVars.CommandChannel.id}",
+          "reason": ""
+        }
+      ]
+    },
+    {
+      "name": ".avatar",
+      "actions": []
+    },
+    {
+      "name": "Avatar",
+      "actions": []
+    },
+    {
+      "name": "news",
+      "perms": [
+        "mod_l3"
+      ],
+      "actions": [
+        {
+          "name": "chatTosend",
+          "category": "Variable",
+          "type": "Get Mentioned Channel",
+          "messageActionRows": [],
+          "varname": "chatTosend",
+          "vartype": "temp"
+        },
+        {
+          "name": "gfsgfsgsf",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "title",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "2"
+        },
+        {
+          "name": "TextToSend",
+          "category": "Variable",
+          "type": "Store Value in Variable",
+          "messageActionRows": [],
+          "varname": "texttosend",
+          "vartype": "Text",
+          "savevartype": "temp",
+          "param": "3+"
+        },
+        {
+          "name": "gsfgs",
+          "category": "Message",
+          "type": "Send Embed",
+          "messageActionRows": [],
+          "channelname": "${tempVars.chatTosend}",
+          "color": "FFFFFF",
+          "title": "${tempVars.title}",
+          "url": "",
+          "authorname": "Kaminari no Ikari",
+          "authorimageurl": "",
+          "authorlink": "",
+          "description": "${tempVars.texttosend}",
+          "thumbnail": "",
+          "image": "",
+          "footer": "",
+          "timestamp": "false",
+          "savetovariable": "",
+          "savetovariabletype": "temp"
+        },
+        {
+          "name": "раыра_2_1",
+          "category": "Message",
+          "type": "Delete Message",
+          "messageActionRows": [],
+          "varname": "${dbsVars.CommandMessage.id}",
+          "channelname": "${dbsVars.CommandChannel.id}"
+        }
+      ]
+    }
+  ]
+}
